@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+  labels:
+    component: docker-demo
+spec:
+  containers:
+    - name: docker-demo
+      image: upendra787/docker-demo
+      ports:
+        - containerPort: 8080
